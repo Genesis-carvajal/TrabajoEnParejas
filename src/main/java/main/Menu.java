@@ -13,17 +13,19 @@ import javax.swing.JOptionPane;
  */
 public class Menu {
 
-    private Nivel1 nivel1;
+    Nivel1 n1 = new Nivel1();  
     private int opcion;
+    
+    
 
   public void MenuPrincipal() {
     do {
          opcion = Integer.parseInt(JOptionPane.showInputDialog("""
                                                       BIENVENIDO
 
-                                                      seleccione una opción:
-                                                      1. ,,,
-                                                      2. ,,,
+                                                      seleccione un algoritmo a imprimir
+                                                      1. Double
+                                                      2. Boolean
                                                       3. ,,,
                                                       4. ,,,
                                                       5. ,,,
@@ -33,10 +35,10 @@ public class Menu {
 
     switch (opcion){
         case 1:
-            nivel1.Decimales();
+            n1.Decimales();
         break;
         case 2:
-            
+            n1.Valores();
         break;        
         case 3:
         
@@ -92,10 +94,12 @@ public class Menu {
         break;
         case 20:
             
-        break;      
+        break;  
+        case 21:
+        break;
         default:
         
         }//switch
-        }while (opcion !=20); //termina do-while
+        }while (opcion !=21); //termina do-while
     }//fin método
 }//fin de la clase
