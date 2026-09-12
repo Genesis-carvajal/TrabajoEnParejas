@@ -5,6 +5,7 @@
 package main;
 
 import arreglosprimitivos.Nivel1;
+import arreglosprimitivos.Nivel2;
 import javax.swing.JOptionPane;
 
 /**
@@ -14,6 +15,7 @@ import javax.swing.JOptionPane;
 public class Menu {
 
     Nivel1 n1 = new Nivel1();  
+    Nivel2 n2 = new Nivel2();
     private int opcion;
     
     
@@ -24,12 +26,13 @@ public class Menu {
                                                       BIENVENIDO
 
                                                       seleccione un algoritmo a imprimir
-                                                      1. Double
-                                                      2. Boolean
+                                                      1. Mostrar longitud y último elemento
+                                                      2. Mostrar el valor almacenado en cada posición
                                                       3. ,,,
                                                       4. ,,,
-                                                      5. ,,,
+                                                      5. Leer 8 números decimales y calcular el promedio general. 
                                                       6. ,,,
+                                                      21. Salir
 
                                                       """));
 
@@ -47,7 +50,7 @@ public class Menu {
         
         break;        
         case 5:
-        
+            n2.calcularPromedio();
         break;        
         case 6:
         
