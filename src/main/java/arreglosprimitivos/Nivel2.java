@@ -16,7 +16,24 @@ public class Nivel2 {
         for (double p : promedio) {
             suma += p;
         }//for
-        double general = suma/promedio.length;
-        System.out.printf("Promedio:%.2f%n",general);
+        double general = suma / promedio.length;
+        System.out.printf("Promedio:%.2f%n", general);
     }//fin método calcularPromedio
+    
+    //#6. Calcular cuántos asistieron, cuántos faltaron y el porcentaje de asistencia.
+    public void Asistencia(){
+        boolean[] asistencia = {true, true, false, true, false, true, true, false, 
+            true, false, true, true, false, true, false, true, true, false, true, false};
+        int presentes = 0;
+        int ausentes = 1;
+        for (int i = 0; i < asistencia.length; i++) {
+            if (asistencia[i]) { //
+                presentes++; //
+            }//if
+                ausentes++;
+        }//for
+        int porcentaje = presentes/ausentes;
+        System.out.println("Presentes: "+presentes + "Ausentes: "+ausentes
+                + "Porcentaje de asistencia: "+porcentaje);
+    }//fin del método asistencia
 }

@@ -9,5 +9,8 @@ package arreglosprimitivos;
  * @author carva
  */
 public class Nivel3 {
+    //#9. Leer 10 enteros y determinar el valor mayor y el valor menor.
+    
+    //#10. Leer un arreglo y solicitar un número a buscar.
     
 }

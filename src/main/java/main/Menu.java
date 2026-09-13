@@ -31,7 +31,7 @@ public class Menu {
                                                       3. ,,,
                                                       4. ,,,
                                                       5. Leer 8 números decimales y calcular el promedio general. 
-                                                      6. ,,,
+                                                      6. Calcular asistencia.
                                                       21. Salir
 
                                                       """));
@@ -53,7 +53,7 @@ public class Menu {
             n2.calcularPromedio();
         break;        
         case 6:
-        
+            n2.Asistencia();
         break;   
   
         case 7:

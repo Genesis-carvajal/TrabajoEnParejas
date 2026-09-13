@@ -9,7 +9,7 @@ package arreglosprimitivos;
  * @author carva
  */
 public class Nivel1 {
-    //#1. Mostrar longitud y último elemento
+    //#1. Mostrar longitud y último elemento.
     public void Decimales() {
         double[] decimales = {25.3, 28.52, 26.75, 32.32};
         for (int i = 0; i < decimales.length; i++) {
@@ -18,7 +18,7 @@ public class Nivel1 {
         }//for
     }//método decimales
 
-    //#2. Mostrar el valor almacenado en cada posición
+    //#2. Mostrar el valor almacenado en cada posición.
     public void Valores() {
         boolean[] valores = {true, true, false, false, true, true};
         for (int i = 0; i < valores.length; i++) {
