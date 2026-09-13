@@ -66,10 +66,10 @@ public class Menu {
             
         break;        
         case 9:
-        n3.MayorMenor();
+            n3.MayorMenor();
         break;        
         case 10:
-        
+            n3.Buscar();
         break;        
         case 11:
         

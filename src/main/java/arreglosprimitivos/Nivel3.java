@@ -4,7 +4,8 @@
  */
 package arreglosprimitivos;
 
-import java.util.Scanner;
+import javax.swing.JOptionPane;
+
 
 /**
  *
@@ -29,12 +30,24 @@ public class Nivel3 {
         System.out.println("Menor: " + menor);  
 }
         //#10. Leer un arreglo y solicitar un número a buscar.
-        public void Buscar(){
-            Scanner sc = new Scanner(System.in);
-            int[] numero = {1, 3, 5, 9};
-            
-            for (int i = 0; i < numero.length; i++){
-                
+    public void Buscar() {
+        int[] numeros = {1, 3, 5, 9, 11};
+
+        String entrada = JOptionPane.showInputDialog("Ingrese el número a buscar:");
+        int buscar = Integer.parseInt(entrada);
+        int posicion = -1;
+
+        for (int i = 0; i < numeros.length; i++) {
+            if (numeros[i] == buscar) {
+                posicion = i;
             }
         }
+        if (posicion != -1) {
+            JOptionPane.showMessageDialog(null,"El número " + buscar + 
+                    " se encontró en la posición " + posicion);
+        } else {
+            JOptionPane.showMessageDialog(null,"El número " + buscar + 
+                    " no existe en el arreglo");
+        }
+    }
 }
