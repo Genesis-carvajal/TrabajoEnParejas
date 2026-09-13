@@ -39,6 +39,13 @@ public class Menu {
                                                       5. Leer 8 números decimales y calcular el promedio general. 
                                                       6. Calcular asistencia.
                                                       9. Leer 10 enteros y determinar el valor mayor y el valor menor.
+                                                      10. Leer un arreglo y solicitar un número a buscar.
+                                                      13. Invertir un arreglo de enteros en el mismo arreglo.
+                                                      14. Crear una copia independiente de un arreglo de 10 enteros.
+                                                      17. Generar un tercer arreglo donde cada posición sea la suma 
+                                                          los arreglos originales.
+                                                      18. Construir un tercero con la diferencia absoluta entre los 
+                                                          valores correspondientes y calcular el promedio de esas diferencias
                                                       21. Salir
 
                                                       """));
@@ -90,10 +97,10 @@ public class Menu {
         
         break;        
         case 16:
-        
+            n5.sumarArreglos();
         break;        
         case 17:
-        
+            n5.diferenciaPrecios();
         break;        
         case 18:
         
@@ -106,6 +113,7 @@ public class Menu {
             
         break;  
         case 21:
+            JOptionPane.showInputDialog("Has salido.");
         break;
         default:
         
