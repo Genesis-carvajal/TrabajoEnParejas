@@ -6,6 +6,7 @@ package main;
 
 import arreglosprimitivos.Nivel1;
 import arreglosprimitivos.Nivel2;
+import arreglosprimitivos.Nivel3;
 import javax.swing.JOptionPane;
 
 /**
@@ -16,6 +17,7 @@ public class Menu {
 
     Nivel1 n1 = new Nivel1();  
     Nivel2 n2 = new Nivel2();
+    Nivel3 n3 = new Nivel3();
     private int opcion;
     
     
@@ -32,6 +34,7 @@ public class Menu {
                                                       4. ,,,
                                                       5. Leer 8 números decimales y calcular el promedio general. 
                                                       6. Calcular asistencia.
+                                                      9. Leer 10 enteros y determinar el valor mayor y el valor menor.
                                                       21. Salir
 
                                                       """));
@@ -63,7 +66,7 @@ public class Menu {
             
         break;        
         case 9:
-        
+        n3.MayorMenor();
         break;        
         case 10:
         
