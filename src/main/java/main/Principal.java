@@ -4,6 +4,8 @@
 
 package main;
 
+import arreglosprimitivos.Nivel1;
+
 /**
  *
  * @author carva
@@ -11,6 +13,9 @@ package main;
 public class Principal {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Nivel1 n1= new Nivel1();
+        //n1.leerYMostrarNumeros();
+        n1.ConvertirPalabra();
+        
     }
 }
