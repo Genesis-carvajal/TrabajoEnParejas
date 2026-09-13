@@ -7,6 +7,8 @@ package main;
 import arreglosprimitivos.Nivel1;
 import arreglosprimitivos.Nivel2;
 import arreglosprimitivos.Nivel3;
+import arreglosprimitivos.Nivel4;
+import arreglosprimitivos.Nivel5;
 import javax.swing.JOptionPane;
 
 /**
@@ -18,6 +20,8 @@ public class Menu {
     Nivel1 n1 = new Nivel1();  
     Nivel2 n2 = new Nivel2();
     Nivel3 n3 = new Nivel3();
+    Nivel4 n4 = new Nivel4();
+    Nivel5 n5 = new Nivel5();
     private int opcion;
     
     
@@ -77,10 +81,10 @@ public class Menu {
         case 12:
         break;
         case 13:
-            
+            n4.Invertir();
         break;
         case 14:
-            
+            n4.copiarArreglo();
         break;        
         case 15:
         
