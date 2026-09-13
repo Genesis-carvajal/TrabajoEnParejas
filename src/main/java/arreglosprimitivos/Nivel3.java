@@ -4,6 +4,8 @@
  */
 package arreglosprimitivos;
 
+import java.util.Scanner;
+
 /**
  *
  * @author carva
@@ -24,9 +26,15 @@ public class Nivel3 {
         }
 
         System.out.println("Mayor: " + mayor);
-        System.out.println("Menor: " + menor);
-        
-    //#10. Leer un arreglo y solicitar un número a buscar.
-  
+        System.out.println("Menor: " + menor);  
 }
+        //#10. Leer un arreglo y solicitar un número a buscar.
+        public void Buscar(){
+            Scanner sc = new Scanner(System.in);
+            int[] numero = {1, 3, 5, 9};
+            
+            for (int i = 0; i < numero.length; i++){
+                
+            }
+        }
 }

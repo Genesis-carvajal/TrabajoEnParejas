@@ -29,10 +29,12 @@ public class Nivel2 {
         for (int i = 0; i < asistencia.length; i++) {
             if (asistencia[i]) { //
                 presentes++; //
-            }//if
+            }else{
             ausentes++;
+            }
         }//for
-        int porcentaje = presentes / ausentes;
+        int total = asistencia.length;
+        int porcentaje = (presentes * 100) / total;
         System.out.println("Presentes: " + presentes + "Ausentes: " + ausentes
                 + "Porcentaje de asistencia: " + porcentaje);
     }//fin del método asistencia
